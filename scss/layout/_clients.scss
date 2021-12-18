@@ -1,25 +1,41 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   .clients-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
     margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
   .clients-list {
     display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-top: -30px;
   }
   .clients-item {
-    width: 170px;
+    width: 210px;
     height: 92px;
-    &:not(:last-child) {
       margin-right: 30px;
-    }
+      margin-top: 30px;
+      @media screen and (min-width: 768px) {
+        width: 226px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+      }
   }
   .clients-link {
     width: 100%;
@@ -43,3 +59,4 @@
     fill: var(--accent-color);
   }
   }
+  

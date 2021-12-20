@@ -37,6 +37,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -383,11 +385,27 @@ body {
 
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: -15px;
+  margin-right: -8px;
 }
 
-.filters-item:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
+}
+
+.filters-item {
+  margin-top: 15px;
   margin-right: 8px;
 }
 
@@ -1149,8 +1167,15 @@ body {
 }
 
 .portfolio-sect {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-sect {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio {

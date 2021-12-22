@@ -59,6 +59,12 @@
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
   .portfolio-names-filters {
     font-size: 16px;
